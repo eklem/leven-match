@@ -1,0 +1,32 @@
+{
+  "name": "leven-match",
+  "version": "0.0.1",
+  "description": "Return all word matches between two arrays within given Levenshtein distance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eklem/leven-match.git"
+  },
+  "keywords": [
+    "search",
+    "fuzzy",
+    "match",
+    "levenshtein",
+    "distance"
+  ],
+  "depencencies": {
+    "leven": "3.1.0"
+  },
+  "author": "Espen Klem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eklem/leven-match/issues"
+  },
+  "homepage": "https://github.com/eklem/leven-match#readme",
+  "dependencies": {
+    "leven": "^3.1.0"
+  }
+}

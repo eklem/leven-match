@@ -1,0 +1,3 @@
+let index =['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'return', 'all', 'words', 'in', 'a', 'query', 'that', 'has', 'matches', 'in', 'an', 'index', 'within', 'a', 'given', 'Levenshtein', 'distance', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'in', 'some', 'cases', 'also', 'searching']
+index = [...new Set(index)]
+console.log(index)
