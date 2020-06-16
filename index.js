@@ -1,26 +1,16 @@
 const leven = require('leven')
+const defaultProperties =  {distance: 1}
 
-let index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays']
-let query = ['words', 'matches']
-let queryWord = 'wor'
-let distance = 2
+const levenMatch = function (query, index, properties) {
+  properties = {
+    ...defaultProperties,
+    ...properties
+  }
+  // .map all query words and .filter on levenshtein matches in all index words
+  const matchedQuery = query.map(queryWord => index.filter(indexWord => leven(indexWord, queryWord) <= properties.distance))
+  return matchedQuery
+}
 
-// const levenMatch = function (queryArr, matchToArr, distance) {
-// }
-
-// .map.filter
-
-const result = index.filter(indexWord => leven(indexWord, queryWord) <= distance )
-console.log(result)
-
-
-// if (index.some(indexWord => leven(indexWord, queryWord) <= distance )) {
-//   return
-// }
-
-
-
-
-// module.exports = {
-//   levenMatch: levenMatch
-// }
+module.exports = {
+  levenMatch: levenMatch
+}
