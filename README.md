@@ -8,10 +8,10 @@ Intended use is to return all words in a query that has matches in an index with
 **Nothing working yet!**
 
 ```javaScript
-const matches = require('leven-match');
+const lvm = require('../index.js')
 const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
-const query = ['qvery', 'words']
+const query = ['qvery', 'words', 'levensthein']
 
-matches(query, index, {distance: 1})
-//['query', 'word', 'words']
+lvm.levenMatch(query, index, {distance: 2})
+//[ [ 'query' ], [ 'word', 'words' ], [ 'levenshtein' ] ]
 ```
