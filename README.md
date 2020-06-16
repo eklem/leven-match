@@ -5,6 +5,8 @@ Intended use is to return all words in a query that has matches in an index with
 
 ## Use
 
+**Nothing working yet!**
+
 ```javaScript
 const matches = require('leven-match');
 const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
