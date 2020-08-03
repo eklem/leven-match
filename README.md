@@ -13,7 +13,7 @@ Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and quer
 
 ## Use
 ```javaScript
-<script src="daq-proc.js"></script>
+<script src="leven-match.js"></script>
 
 <script>
   // Just picking leven-match from daq-proc
