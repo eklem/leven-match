@@ -3,6 +3,8 @@ Return all word matches between two arrays within given Levenshtein distance.
 
 Intended use is to return all words in a query that has matches in an index within a given Levenshtein distance. Good for autocomplete type functionality, and in some cases also searching.
 
+Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and query processing for offline-first search.
+
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
@@ -11,12 +13,20 @@ Intended use is to return all words in a query that has matches in an index with
 
 ## Use
 ```javaScript
-const lvm = require('leven-match')
-const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
-const query = ['qvery', 'words', 'levensthein']
+<script src="daq-proc.js"></script>
 
-lvm.levenMatch(query, index, {distance: 2})
-//[ [ 'query' ], [ 'word', 'words' ], [ 'levenshtein' ] ]
+<script>
+  // Just picking leven-match from daq-proc
+  const {lvm} = dqp
+
+  const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
+
+  const query = ['qvery', 'words', 'levensthein']
+
+  lvm.levenMatch(query, index, {distance: 2})
+  // returns:
+  //[ [ 'query' ], [ 'word', 'words' ], [ 'levenshtein' ] ]
+</script>
 ```
 
 Returns an array of arrays. One sub-array for each query word.
