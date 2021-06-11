@@ -1,12 +1,13 @@
 {
   "name": "leven-match",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Return all word matches between two arrays within given Levenshtein distance",
-  "main": "index.js",
+  "main": "./dist/leven-match.cjs.js",
+  "module": "./dist/leven-match.esm.mjs",
+  "browser": "./dist/leven-match.umd.js",
   "scripts": {
-    "compile-for-browser": "webpack",
-    "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
-    "test": "standard './*.js' './test/*.js' && npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && rm -rf test/sandbox"
+    "build": "rollup --config",
+    "test": "standard './src/*.js' && npm run build  && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs"
   },
   "repository": {
     "type": "git",
@@ -23,15 +24,7 @@
     "leven": "^3.1.0"
   },
   "devDependencies": {
-    "standard": "^16.0.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "tape": "^5.2.2",
-    "tape-run": "^9.0.0",
-    "path-browserify": "^1.0.1",
-    "stream-browserify": "^3.0.0",
-    "process": "^0.11.10",
-    "buffer": "^6.0.3"
+    "batr": "^0.3.2"
   },
   "author": "Espen Klem",
   "license": "MIT",
