@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/eklem/leven-match#readme",
   "dependencies": {
-    "leven": "^3.1.0"
+    "leven": "^4.0.0"
   }
 }
