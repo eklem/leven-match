@@ -10,7 +10,7 @@ export default [
   {
     input: './src/index.js',
     output: [
-      { name: 'math', file: pkg.browser, format: 'umd' }
+      { name: 'lvm', file: pkg.browser, format: 'umd' }
     ],
     plugins: [
       resolve(), // so Rollup can find `ms`
@@ -25,8 +25,6 @@ export default [
   // builds from a single configuration where possible, using
   // an array for the `output` option, where we can specify
   // `file` and `format` for each target)
-
-  // *** This needs to be stopword.js and not vandelay-industries.js ***
   {
     input: './src/index.js',
     output: [

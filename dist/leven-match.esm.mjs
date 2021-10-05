@@ -98,4 +98,4 @@ var src = {
   levenMatch: levenMatch
 };
 
-export default src;
+export { src as default };
