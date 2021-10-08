@@ -1,6 +1,6 @@
 {
   "name": "leven-match",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Return all word matches between two arrays within given Levenshtein distance",
   "main": "./dist/leven-match.cjs.js",
   "module": "./dist/leven-match.esm.mjs",
@@ -24,7 +24,7 @@
     "leven": "^4.0.0"
   },
   "devDependencies": {
-    "batr": "^1.0.6"
+    "batr": "^1.0.5"
   },
   "author": "Espen Klem",
   "license": "MIT",
