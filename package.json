@@ -1,13 +1,13 @@
 {
   "name": "leven-match",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Return all word matches between two arrays within given Levenshtein distance",
   "main": "./dist/leven-match.cjs.js",
   "module": "./dist/leven-match.esm.mjs",
   "browser": "./dist/leven-match.umd.js",
   "scripts": {
     "build": "rollup --config",
-    "test": "standard './src/*.js' && npm run build  && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs"
+    "test": "standard './src/*.js' && npm run build && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs"
   },
   "repository": {
     "type": "git",
@@ -20,19 +20,16 @@
     "levenshtein",
     "distance"
   ],
-  "depencencies": {
+  "dependencies": {
     "leven": "^4.0.0"
   },
   "devDependencies": {
-    "batr": "^1.0.6"
+    "batr": "^1.0.8"
   },
   "author": "Espen Klem",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eklem/leven-match/issues"
   },
-  "homepage": "https://github.com/eklem/leven-match#readme",
-  "dependencies": {
-    "leven": "^3.1.0"
-  }
+  "homepage": "https://github.com/eklem/leven-match#readme"
 }

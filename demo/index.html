@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="./demo-app.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../dist/leven-match.umd.js"></script>
+    <title>leven-match browser demo</title>
+  </head>
+  <body>
+    <h1>leven-match browser demo</h1>
+    <input type="number" size="10" value="0" id="firstNumber">
+    <select name="calculation" id="mathselector">
+        <option value="add">+ added to</option>
+        <option value="subtract">- subtracted by</option>
+        <option value="multiply">* multiplied by</option>
+        <option value="divide">/ divide by</option>
+    </select>
+    <input type="number" size="10" value="0" id="secondNumber">
+    <h2 id="result">= <span id="resultNumber"></span></h2>
+    <script src="./demo-app.js"></script>
+  </body>
+</html>
