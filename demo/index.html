@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-navbar-fixed-top">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leven-match demo</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="./demo-app.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="../dist/leven-match.umd.js"></script>
-    <title>leven-match browser demo</title>
   </head>
   <body>
-    <h1>leven-match browser demo</h1>
-    <input type="number" size="10" value="0" id="firstNumber">
-    <select name="calculation" id="mathselector">
-        <option value="add">+ added to</option>
-        <option value="subtract">- subtracted by</option>
-        <option value="multiply">* multiplied by</option>
-        <option value="divide">/ divide by</option>
-    </select>
-    <input type="number" size="10" value="0" id="secondNumber">
-    <h2 id="result">= <span id="resultNumber"></span></h2>
+
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Close">close</button>
+          <span class="mdc-top-app-bar__title">Contextual title</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Share">share</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Delete">delete</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Open menu">more_vert</button>
+        </section>
+      </div>
+    </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+      App content
+    </main>
+
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+          <span class="mdc-top-app-bar__title">Page title</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+        </section>
+      </div>
+    </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+      App content
+    </main>
+    
+    <button class="mdc-button foo-button">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Button</span>
+    </button>
+
+    <div class="mdc-touch-target-wrapper">
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label">My Accessible Button</span>
+      </button>
+    </div>
+
+    <button class="mdc-button mdc-button--raised">
+      <span class="mdc-button__label">Contained Button</span>
+    </button>
+          
     <script src="./demo-app.js"></script>
   </body>
+</html>
 </html>
