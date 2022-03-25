@@ -1,6 +1,6 @@
 {
   "name": "leven-match",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Return all word matches between two arrays within given Levenshtein distance",
   "main": "./dist/leven-match.cjs.js",
   "module": "./dist/leven-match.esm.mjs",
