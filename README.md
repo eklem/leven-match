@@ -1,9 +1,4 @@
 # leven-match
-Return all word matches between two arrays within given Levenshtein distance.
-
-Intended use is to return all words in a query that has matches in an index within a given Levenshtein distance. Good for autocomplete type functionality, and in some cases also searching.
-
-Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and query processing for offline-first search.
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -11,6 +6,12 @@ Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and quer
 [![MIT License][license-image]][license-url]
 [![Build Status][build-image]][build-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
+
+Return all word matches between two arrays within given Levenshtein distance.
+
+Intended use is to return all words in a query that has matches in an index within a given Levenshtein distance. Good for autocomplete type functionality, and in some cases also searching.
+
+Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and query processing for offline-first search.
 
 ## Breaking change
 
