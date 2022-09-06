@@ -7,22 +7,45 @@ Part of [daq-proc](https://github.com/eklem/daq-proc) - Simple document and quer
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
+[![](https://data.jsdelivr.com/v1/package/npm/leven-match/badge?style=rounded)](https://www.jsdelivr.com/package/npm/leven-match)
 [![MIT License][license-image]][license-url]
 [![Build Status][build-image]][build-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 
-## Use
+## Breaking change
+
+Importing/requiring script has changed slightly for CJS and ESM. UMD is as it was.
+
+## Initiating
+
+### UMD -  Universal module definition/browser
 ```javaScript
-<script src="leven-match.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leven-match/dist/leven-match.umd.min.js"></script>
+// lvm.levenMatch available
+```
+
+### CJS - CommonJS
+
+```javaScript
+const { levenMatch } = require('leven-match')
+// levenMatch available
+```
+
+### ESM - Ecmascript module
+
+```javaScript
+import { levenMatch } from 'leven-match'
+// levenMatch available
+```
+
+
+## Use
 
 <script>
-  // Just picking leven-match from daq-proc
-  const {lvm} = dqp
-
   const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
   const query = ['qvery', 'words', 'levensthein']
 
-  lvm.levenMatch(query, index, {distance: 2})
+  levenMatch(query, index, {distance: 2})
   // returns:
   //[ [ 'query' ], [ 'word', 'words' ], [ 'levenshtein' ] ]
 </script>
