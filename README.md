@@ -41,6 +41,7 @@ import { levenMatch } from 'leven-match'
 
 ## Use
 
+```javaScript
 <script>
   const index = ['return', 'all', 'word', 'matches', 'between', 'two', 'arrays', 'within', 'given', 'levenshtein', 'distance', 'intended', 'use', 'is', 'to', 'words', 'in', 'a', 'query', 'that', 'has', 'an', 'index', 'good', 'for', 'autocomplete', 'type', 'functionality,', 'and', 'some', 'cases', 'also', 'searching']
   const query = ['qvery', 'words', 'levensthein']
