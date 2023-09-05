@@ -24,7 +24,7 @@
     "leven": "^4.0.0"
   },
   "devDependencies": {
-    "batr": "^2.1.9"
+    "batr": "^2.1.10"
   },
   "author": "Espen Klem",
   "license": "MIT",
