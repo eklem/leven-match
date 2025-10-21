@@ -21,7 +21,7 @@
     "distance"
   ],
   "dependencies": {
-    "leven": "^4.0.0"
+    "leven": "^4.1.0"
   },
   "devDependencies": {
     "batr": "^2.1.10"
